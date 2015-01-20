@@ -1,10 +1,16 @@
+---
 applications:
 - services:
   - SampleJavaAppSB-DataCache
-  disk_quota: 1024M
   host: SampleJavaAppSB
+  disk_quota: 1024M
   name: SampleJavaAppSB
   path: cacheSampleJavaNativeAPIs.war
   domain: stage1.eu-gb.mybluemix.net
   instances: 1
   memory: 512M
+  
+declared-services:
+  SampleJavaAppSB-DataCache:
+    plan: Free
+    type: DataCache
