@@ -9,8 +9,7 @@ applications:
   domain: stage1.eu-gb.mybluemix.net
   instances: 1
   memory: 512M
-  
 declared-services:
   SampleJavaAppSB-DataCache:
-    plan: Free
+    plan: free
     type: DataCache
